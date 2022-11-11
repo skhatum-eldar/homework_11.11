@@ -3,6 +3,38 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
+// Console.WriteLine("Enter the 1st number ");
+// int numA = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Enter the 2nd number ");
+// int numB = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Enter the 3rd number ");
+// int numC = Convert.ToInt32(Console.ReadLine());
+
+// if (numA > numB)
+// {
+//     if (numA < numC)
+//     {
+//         Console.WriteLine(numC);
+//     }
+//     else
+//     {
+//         Console.WriteLine(numA);
+//     }
+// }
+// else
+// {
+//     if (numB < numC)
+//     {
+//         Console.WriteLine(numC);
+//     }
+//     else
+//     {
+//         Console.WriteLine(numB);
+//     }
+// }
+
 Console.WriteLine("Enter the 1st number ");
 int numA = Convert.ToInt32(Console.ReadLine());
 
@@ -12,25 +44,19 @@ int numB = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter the 3rd number ");
 int numC = Convert.ToInt32(Console.ReadLine());
 
-if (numA > numB)
+if (numA<numB || numA<numC)
 {
-    if (numA < numC)
+    if (numB<numC)
     {
-        Console.WriteLine(numC);
+    Console.WriteLine(numC);
     }
     else
     {
-        Console.WriteLine(numA);
+    Console.WriteLine(numB);
     }
 }
+
 else
 {
-    if (numB < numC)
-    {
-        Console.WriteLine(numC);
-    }
-    else
-    {
-        Console.WriteLine(numB);
-    }
+    Console.WriteLine(numA);
 }
