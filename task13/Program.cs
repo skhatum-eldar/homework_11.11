@@ -7,15 +7,27 @@ Console.WriteLine("Enter the number");
 int number = Convert.ToInt32(Console.ReadLine());
 string numberText = Convert.ToString(number);
 
+// if (number > -100 & number < 100)
+// {
+//     Console.WriteLine("OOPS! There is no 3rd digit");
+// }
+// else if (number < -99)
+// {
+//     Console.WriteLine($"The third digit of {number} is {numberText[3]}");
+// }
+// else
+// {
+//     Console.WriteLine($"The third digit of {number} is {numberText[2]}");
+// }
+
 if (number > -100 & number < 100)
-{
-    Console.WriteLine("OOPS! There is no 3rd digit");
-}
-else if (number < -99)
-{
-    Console.WriteLine($"The third digit of {number} is {numberText[3]}");
-}
-else
+    Console.WriteLine("OOPS! TRY AGAIN!");
+
+else if (number > 0 && numberText.Length >= 2)
 {
     Console.WriteLine($"The third digit of {number} is {numberText[2]}");
+}
+else if (number < 0 && numberText.Length >= 3)
+{
+    Console.WriteLine($"The third digit of {number} is {numberText[3]}");
 }
