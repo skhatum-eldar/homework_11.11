@@ -17,5 +17,5 @@ else if (number < -99)
 }
 else
 {
-        Console.WriteLine($"The third digit of {number} is {numberText[2]}");
+    Console.WriteLine($"The third digit of {number} is {numberText[2]}");
 }
