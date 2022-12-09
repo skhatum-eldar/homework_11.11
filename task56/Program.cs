@@ -44,7 +44,7 @@ void PrintMatrix(int[,] matrix)
 void LineFound(int[,] array)
 {
     int sum = 0;
-    int sumNewMin = 100;
+    int sumNewMin = 10000;
     int k = 0;
     int temp = 0;
     int[,] minSum = new int[1, matrix.GetLength(0)];
